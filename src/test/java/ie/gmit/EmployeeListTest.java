@@ -15,7 +15,7 @@ public class EmployeeListTest {
     @BeforeEach
     void setup()
     {
-        myEmployee = new Employee("Jack", "08444", "234", "27");
+        myEmployee = new Employee("Jack", "08444", "55577", "27");
         myList = new EmployeeList();
     }
 
@@ -37,7 +37,7 @@ public class EmployeeListTest {
     {
         myList.addEmployee(myEmployee);
         assertEquals(myEmployee, myList.findByNumber("Jack"));
-        assertEquals("234", myEmployee.getNumber());
-        
+        assertEquals("55577", myEmployee.getNumber());
+
     }
 }

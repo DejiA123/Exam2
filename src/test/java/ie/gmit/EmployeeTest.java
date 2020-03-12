@@ -10,13 +10,12 @@ public class EmployeeTest {
 
     @Test
     void testEmployee(){
-        myEmployee = new Employee("Tom", "0833333", "1234", "30");
-
+        myEmployee = new Employee("Tom", "0833333", "77577", "30");
     }
 
     @Test
     void testName() {
-        myEmployee = new Employee("Tom", "0833333", "1234", "30");
+        myEmployee = new Employee("Tom", "0833333", "77577", "30");
         myEmployee.getName();
         assertEquals("Tom", myEmployee.getName());
     }
@@ -24,7 +23,7 @@ public class EmployeeTest {
     @Test
     void testPhone()
     {
-        myEmployee = new Employee("Tom", "0833333", "1234", "30");
+        myEmployee = new Employee("Tom", "0833333", "77577", "30");
         myEmployee.getPhone();
         assertEquals("0833333", myEmployee.getPhone());
     }
@@ -32,15 +31,15 @@ public class EmployeeTest {
     @Test
     void testNumber()
     {
-        myEmployee = new Employee("Tom", "0833333", "1234", "30");
+        myEmployee = new Employee("Tom", "0833333", "77577", "30");
         myEmployee.getNumber();
-        assertEquals("1234", myEmployee.getNumber());
+        assertEquals("77577", myEmployee.getNumber());
     }
 
     @Test
     void testAge()
     {
-        myEmployee = new Employee("Tom", "0833333", "1234", "30");
+        myEmployee = new Employee("Tom", "0833333", "77577", "30");
         myEmployee.getAge();
         assertEquals("30", myEmployee.getAge());
     }
