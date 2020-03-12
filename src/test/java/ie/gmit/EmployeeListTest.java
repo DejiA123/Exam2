@@ -16,5 +16,20 @@ public class EmployeeListTest {
     void setup()
     {
         myEmployee = new Employee("Jack", "08444", "234", "27");
+        myList = new EmployeeList();
+    }
+
+    @Test
+    void testAddEmployee()
+    {
+        myList.addEmployee(myEmployee);
+        assertEquals(1, myList.getSize());
+    }
+
+    @Test
+    void testFindbyNameEmployee()
+    {
+        myList.addEmployee(myEmployee);
+        assertEquals(myEmployee, myList.findByName("Jack"));
     }
 }
