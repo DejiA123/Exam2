@@ -14,13 +14,19 @@ public class EmployeeList {
         list.add(myEmployee);
     }
 
+    public void deleteEmployee(Employee myEmployee)
+    {
+        list.add(myEmployee);
+    }
+
+
     public int getSize()
     {
         list.size();
         return list.size();
     }
 
-    public Employee findByName(String name)
+    public Employee findByNumber(String name)
     {
         for(Employee employee : list)
         {

@@ -26,10 +26,18 @@ public class EmployeeListTest {
         assertEquals(1, myList.getSize());
     }
 
+    void testDeleteEmployee()
+    {
+        myList.deleteEmployee(myEmployee);
+        assertEquals(0, myList.getSize());
+    }
+
     @Test
-    void testFindbyNameEmployee()
+    void testFindbyNumberEmployee()
     {
         myList.addEmployee(myEmployee);
-        assertEquals(myEmployee, myList.findByName("Jack"));
+        assertEquals(myEmployee, myList.findByNumber("Jack"));
+        assertEquals("234", myEmployee.getNumber());
+        
     }
 }
