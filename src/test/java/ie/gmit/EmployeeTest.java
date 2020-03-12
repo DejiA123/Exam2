@@ -47,7 +47,4 @@ public class EmployeeTest {
 
 
 
-
-    private void assertEquals(String s, String number) {
-    }
 }
